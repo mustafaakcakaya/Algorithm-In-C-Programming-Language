@@ -5,7 +5,21 @@
 int main()
 {
 	
-	int a[3][3], b[3][3], r=3, c=3, i, j;
+	
+    //------------
+    /*      𝐴 =  2 3 1
+                 6 2 4
+                 3 8 0
+         matrisi verilmiştir. B=A^T
+         ‘yi hesaplayıp ekrana yazdıran C programını yazınız.
+        ( Not: B=A^T=  2 6 3
+                       3 2 8
+                       1 4 0
+         )
+    */
+    
+	
+    int a[3][3], b[3][3], r=3, c=3, i, j;
     
     a[0][0]= 2; a[0][1]= 3; a[0][2]= 1;
     a[1][0]= 6; a[1][1]= 2; a[1][2]= 4;
@@ -89,19 +103,6 @@ int main()
         }
     }
     printf("%d adet koşula uygun sayı mevcut", sayac);
-
-    //------------
-    /*      𝐴 =  2 3 1
-                 6 2 4
-                 3 8 0
-         matrisi verilmiştir. B=A^T
-         ‘yi hesaplayıp ekrana yazdıran C programını yazınız.
-        ( Not: B=A^T=  2 6 3
-                       3 2 8
-                       1 4 0
-         )
-    */
-    
 
 
     return 0;
