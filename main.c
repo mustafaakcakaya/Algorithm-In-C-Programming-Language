@@ -4,6 +4,37 @@
 
 int main()
 {
+	
+	int a[3][3], b[3][3], r=3, c=3, i, j;
+    
+    a[0][0]= 2; a[0][1]= 3; a[0][2]= 1;
+    a[1][0]= 6; a[1][1]= 2; a[1][2]= 4;
+    a[2][0]= 3; a[2][1]= 8; a[2][2]= 0;
+    
+    
+    // A Matrisini Gösterme
+    printf("\nA matrisi: \n");
+    for (i = 0; i < r; ++i)
+        for (j = 0; j < c; ++j) {
+            printf("%d  ", a[i][j]);
+            if (j == c - 1)
+                printf("\n");
+        }
+
+    // A'nın Tersini Bulma(B matrisi)
+    for (i = 0; i < r; ++i)
+        for (j = 0; j < c; ++j) {
+            b[j][i] = a[i][j];
+        }
+
+    // B Batrsini Gösterme
+    printf("\nA matrisinin Tersi(B matrisi):\n");
+    for (i = 0; i < c; ++i)
+        for (j = 0; j < r; ++j) {
+            printf("%d  ", b[i][j]);
+            if (j == r - 1)
+                printf("\n");
+        }
     
     //----------100 Ogrencinin dersi gecme durumu------------
     /*
@@ -70,36 +101,7 @@ int main()
                        1 4 0
          )
     */
-    int a[3][3], b[3][3], r=3, c=3, i, j;
     
-    a[0][0]= 2; a[0][1]= 3; a[0][2]= 1;
-    a[1][0]= 6; a[1][1]= 2; a[1][2]= 4;
-    a[2][0]= 3; a[2][1]= 8; a[2][2]= 0;
-    
-    
-    // A Matrisini Gösterme
-    printf("\nA matrisi: \n");
-    for (i = 0; i < r; ++i)
-        for (j = 0; j < c; ++j) {
-            printf("%d  ", a[i][j]);
-            if (j == c - 1)
-                printf("\n");
-        }
-
-    // A'nın Tersini Bulma(B matrisi)
-    for (i = 0; i < r; ++i)
-        for (j = 0; j < c; ++j) {
-            b[j][i] = a[i][j];
-        }
-
-    // B Batrsini Gösterme
-    printf("\nA matrisinin Tersi(B matrisi):\n");
-    for (i = 0; i < c; ++i)
-        for (j = 0; j < r; ++j) {
-            printf("%d  ", b[i][j]);
-            if (j == r - 1)
-                printf("\n");
-        }
 
 
     return 0;
